@@ -1,0 +1,20 @@
+{
+  "name": "pipeline",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kirill Stryaponov (stryaponoff@gmail.com)",
+  "license": "MIT",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --sourcemap --minify --outdir=dist/js",
+    "watch": "esbuild src/index.ts --bundle --sourcemap --minify --outdir=dist/js --watch",
+    "serve": "esbuild src/index.ts --bundle --sourcemap --minify --outdir=dist/js --servedir=dist"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "esbuild": "^0.14.54",
+    "esbuild-node-externals": "^1.4.1",
+    "eslint": "^8.22.0",
+    "typescript": "^4.7.4"
+  }
+}

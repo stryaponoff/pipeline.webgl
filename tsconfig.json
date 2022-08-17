@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "lib": ["dom", "es2017"],
+    "strict": true,
+    "esModuleInterop": false,
+    "outDir": "dist/tsc",
+    "rootDir": "./",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["./src/**/*.ts"]
+}
